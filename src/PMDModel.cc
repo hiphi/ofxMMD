@@ -131,7 +131,7 @@ void PMDModel::prepare()
         }
         from += nindices;
     }
-	printf("*** vertices:%i ***\n",nvertices);
+	
     // Initialize skin vertices and set values from vertex
     for (int i = 0; i < nvertices; i++) {
         const Vertex *vertex = m_vertices[i];

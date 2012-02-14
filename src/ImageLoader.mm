@@ -26,14 +26,20 @@
 	NSImage* imgTex; // テクスチャー用に変形した画像
 	NSBitmapImageRep* imgTexRep; // テクスチャーのビットマップ抽出用
 	GLuint texId; // テクスチャーID
+	CGFloat wid;
+	CGFloat hig;
 	
 	// テクスチャーサイズのNSImageを作成 ( Cocoaを主に使用 )
 	//NSString *_imgPath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], imgPath];
 	imgFile = [ [ [ NSImage alloc ] initWithContentsOfFile: imgPath ] autorelease ]; // ファイルから読み込み
-	
-	imgTex  = [ [ [ NSImage alloc ] initWithSize : NSMakeSize( TEX_SIZE, TEX_SIZE ) ] autorelease ];
+	//NSLog(@"img::%@",imgFile.size());
+	NSSize size = [imgFile size];
+	wid = (size.width  > 0 ) ? size.width  : 2;
+	hig = (size.height > 0 ) ? size.height : 2;
+	//NSLog(@"size%f",size.height);
+	imgTex  = [ [ [ NSImage alloc ] initWithSize : NSMakeSize( wid, hig ) ] autorelease ];
 	[ imgTex lockFocus ];
-	[ imgFile drawInRect : NSMakeRect( 0, 0, TEX_SIZE, TEX_SIZE )
+	[ imgFile drawInRect : NSMakeRect( 0, 0, wid, hig )
 				fromRect : NSZeroRect
 			   operation : NSCompositeSourceOver
 				fraction : 1.0 ]; // imgFileをimgTex内にテクスチャーサイズで描画

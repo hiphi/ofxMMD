@@ -27,4 +27,12 @@ public:
 	vpvl::PMDModel *model;
 	vpvl::gl2::Renderer *render;
 	internal::Delegate *delegate;
+	
+	//////////
+	btDiscreteDynamicsWorld *mWorld;
+	btBroadphaseInterface *bi;
+	btCollisionDispatcher *cDisp;
+	btConstraintSolver *sol;
+	btDefaultCollisionConfiguration *cConf;
+	//////////
 };

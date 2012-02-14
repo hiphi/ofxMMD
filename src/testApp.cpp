@@ -43,34 +43,56 @@ void testApp::setup() {
 	
 	
 	
+	/////////
+	const int MAX_OBJECT_NUMBER = 20000;
+	cConf = new btDefaultCollisionConfiguration();
+	cDisp = new btCollisionDispatcher(cConf);
+	bi = new btAxisSweep3(btVector3(-10000,-10000,-10000), btVector3(10000,10000,10000), MAX_OBJECT_NUMBER);
+	sol = new btSequentialImpulseConstraintSolver();
+	mWorld = new btDiscreteDynamicsWorld(cDisp, bi, sol, cConf);
+	mWorld->setGravity(btVector3(0,-10,0));
+	//////////
+	
+	
+	
 	delegate = new internal::Delegate();
 	render = new vpvl::gl2::Renderer(delegate,1024,768,60);
 	render->createPrograms();
+	render->createShadowFrameBuffers();
+	vpvl::Scene *scene = render->scene();
+	render->scene()->setWorld(mWorld);
 	render->initializeSurface();
 	render->uploadModel(model, "../../../data");
-	render->setSelectedModel(model);
-	render->createShadowFrameBuffers();
-	render->renderModel(model);
+	//render->setSelectedModel(model);
+	//render->createShadowFrameBuffers();
+	//render->renderModel(model);
 	//render->renderModelZPlot(model);
+	
+	//ofBackground(255,255,255);
 }
 
 //--------------------------------------------------------------
 void testApp::update() {
-	render->updateModel(model);
+	//render->updateModel(model);
+	vpvl::Scene *scene = render->scene();
+	scene->updateModelView();
+	scene->updateProjection();
+	render->updateAllModel();
 }
 
 //--------------------------------------------------------------
 void testApp::draw() {
+	//static float rot=0;
 	render->clear();
 	//render->renderModelZPlot(model);
-	ofPushMatrix();
-	ofTranslate(100, 100);
-	ofScale(100.f, 100.f);
+	
 	render->renderModel(model);
-	ofPopMatrix();
+	//render->renderModelEdge(model);
+	//render->renderModelShadow(model);
+	
     //render->renderProjectiveShadow();
-   // render->renderAllModels();
-   // render->renderAllAssets();
+    //render->renderAllModels();
+    //render->renderAllAssets();
 }
 
 //--------------------------------------------------------------
