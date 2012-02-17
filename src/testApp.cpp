@@ -1,5 +1,6 @@
 #include "testApp.h"
 #include "Delegate.h"
+#include "Common.h"
 
 #define BYTESRD 1024
 
@@ -64,7 +65,7 @@ void testApp::setup() {
 	render->uploadModel(model, "../../../data");
 	//render->setSelectedModel(model);
 	render->renderModel(model);
-	//render->renderModelZPlot(model);
+	render->renderModelZPlot(model);
 	
 	ofBackground(255,255,255);
 	
@@ -75,8 +76,7 @@ void testApp::setup() {
 void testApp::update() {
 	static btScalar t= 0;
 	btScalar dt = 1/60.f;
-	
-	mWorld->stepSimulation(t / 1000000.f);
+	//mWorld->stepSimulation(t / 1000000.f);
 	
 	model->updateImmediate();
 	
@@ -84,6 +84,7 @@ void testApp::update() {
 	vpvl::Scene *scene = render->scene();
 	scene->updateModelView();
 	scene->updateProjection();
+	scene->advanceMotion(0.1f);
 	render->updateAllModel();
 	
 	t += dt;
@@ -91,12 +92,12 @@ void testApp::update() {
 
 //--------------------------------------------------------------
 void testApp::draw() {
-	//static float rot=0;
-	render->clear();
-	//render->renderModelZPlot(model);
 	
+	render->clear();
+	
+	render->renderModelZPlot(model);
+	//render->renderModelEdge(model);
 	render->renderModel(model);
-	render->renderModelEdge(model);
 	render->renderModelShadow(model);
 	
     //render->renderProjectiveShadow();
@@ -107,6 +108,19 @@ void testApp::draw() {
 //--------------------------------------------------------------
 void testApp::keyPressed(int key) {
 	
+	static float posX=0.0f;
+	static float posZ=0.0f;
+
+	if(key == 356){
+		posX += 0.25;
+	}else if(key == 358){
+		posX -= 0.25;
+	}else if(key == 359){
+		posZ += 0.25;
+	}else if(key == 357){
+		posZ -= 0.25;
+	}
+	model->setPositionOffset(btVector3(posX,0.0f,posZ));
 }
 
 //--------------------------------------------------------------

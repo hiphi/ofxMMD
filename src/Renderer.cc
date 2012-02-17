@@ -955,7 +955,7 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
         m_modelProgram->setBoneMatrices(model->boneMatricesPointer(), model->bones().count());
     }
 
-    float matrix4x4[16], matrix3x3[9], modelViewMtx[16],projectionMtx[16];
+    float matrix4x4[16], matrix3x3[9];
 	
     m_scene->getModelViewMatrix(matrix4x4);
     m_modelProgram->setModelViewMatrix(matrix4x4);
@@ -1039,8 +1039,6 @@ void Renderer::renderModelShadow(const vpvl::PMDModel *model)
 	
 	glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, 0);
     m_shadowProgram->unbind();
-	
-	glPopMatrix();
 }
 
 void Renderer::renderModelZPlot(const vpvl::PMDModel *model)
@@ -1070,16 +1068,6 @@ void Renderer::renderModelZPlot(const vpvl::PMDModel *model)
     m_zplotProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kVerticesStride)*/model->verticesPointer()),
                                  model->strideSize(vpvl::PMDModel::kVerticesStride));
 	
-	/*size_t offset = 0;
-	const vpvl::MaterialList &materials = model->materials();
-	const int nmaterials = materials.count();
-	for (int i = 0; i < nmaterials; i++) {
-		const vpvl::Material *material = materials[i];
-		const int nindices = material->countIndices();
-		glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
-		//printf("offset:%lu\n",offset);
-        offset += nindices;
-	}*/
 	glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, 0);
 	
     glDisable(GL_POLYGON_OFFSET_FILL);
