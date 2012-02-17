@@ -36,6 +36,8 @@
 	NSSize size = [imgFile size];
 	wid = (size.width  > 0 ) ? size.width  : 2;
 	hig = (size.height > 0 ) ? size.height : 2;
+	//wid = TEX_SIZE;
+	//hig = TEX_SIZE;
 	//NSLog(@"size%f",size.height);
 	imgTex  = [ [ [ NSImage alloc ] initWithSize : NSMakeSize( wid, hig ) ] autorelease ];
 	[ imgTex lockFocus ];
@@ -46,15 +48,16 @@
 	[ imgTex unlockFocus ];
 	imgTexRep = [ [ NSBitmapImageRep alloc ] initWithData : [ imgTex TIFFRepresentation ] ];
 	glGenTextures( 1, &texId ); // 空のテクスチャーを作成
+	//NSLog(@"bit per pixel:%d",[imgTexRep bitsPerPixel]);
 	NSLog(@"img::%@",imgFile);
-	/*glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 	glBindTexture(GL_TEXTURE_2D, texId);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, TEX_SIZE, TEX_SIZE, 0, GL_RGBA, GL_UNSIGNED_BYTE, [ imgTexRep bitmapData ]);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, wid, hig, 0, GL_RGBA, GL_UNSIGNED_BYTE, [ imgTexRep bitmapData ]);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glBindTexture(GL_TEXTURE_2D, 0);*/
+	glBindTexture(GL_TEXTURE_2D, 0);
 	return( texId );
 }
 @end

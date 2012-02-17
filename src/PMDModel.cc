@@ -486,15 +486,15 @@ void PMDModel::updateToon(const Vector3 &lightDirection)
 
 void PMDModel::updateImmediate()
 {
-	printf("updateImmediate\n");
+	//printf("updateImmediate\n");
     updateRootBone();
-	printf("updateRootBone done\n");
+	//printf("updateRootBone done\n");
     updateAllBones();
-	printf("updateAllBones done\n");
+	//printf("updateAllBones done\n");
     updateAllFaces();
-	printf("updateAllFaces done\n");
+	//printf("updateAllFaces done\n");
     updateBoneFromSimulation();
-	printf("updateBoneFromSimulation done\n");
+	//printf("updateBoneFromSimulation done\n");
     updateSkins();
 }
 

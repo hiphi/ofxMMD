@@ -42,7 +42,6 @@ void testApp::setup() {
 	
 	
 	
-	
 	/////////
 	const int MAX_OBJECT_NUMBER = 20000;
 	cConf = new btDefaultCollisionConfiguration();
@@ -64,20 +63,30 @@ void testApp::setup() {
 	render->initializeSurface();
 	render->uploadModel(model, "../../../data");
 	//render->setSelectedModel(model);
-	//render->createShadowFrameBuffers();
-	//render->renderModel(model);
+	render->renderModel(model);
 	//render->renderModelZPlot(model);
 	
-	//ofBackground(255,255,255);
+	ofBackground(255,255,255);
+	
+	//glEnable(GL_DEPTH_TEST);
 }
 
 //--------------------------------------------------------------
 void testApp::update() {
-	//render->updateModel(model);
+	static btScalar t= 0;
+	btScalar dt = 1/60.f;
+	
+	mWorld->stepSimulation(t / 1000000.f);
+	
+	model->updateImmediate();
+	
+	render->updateModel(model);
 	vpvl::Scene *scene = render->scene();
 	scene->updateModelView();
 	scene->updateProjection();
 	render->updateAllModel();
+	
+	t += dt;
 }
 
 //--------------------------------------------------------------
@@ -87,8 +96,8 @@ void testApp::draw() {
 	//render->renderModelZPlot(model);
 	
 	render->renderModel(model);
-	//render->renderModelEdge(model);
-	//render->renderModelShadow(model);
+	render->renderModelEdge(model);
+	render->renderModelShadow(model);
 	
     //render->renderProjectiveShadow();
     //render->renderAllModels();

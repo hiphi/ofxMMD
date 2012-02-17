@@ -93,6 +93,7 @@ public:
         }
         //qDebug("Loaded a texture (ID=%d): \"%s\"", textureID, qPrintable(pathString));
 		printf("Loaded a texture (ID=%d): \"%s\"\n", textureID, path.c_str());
+		glBindTexture(GL_TEXTURE_2D, 0);
         return textureID != 0;
     }
     bool uploadToonTexture(const std::string &name, const std::string &dir, GLuint &textureID) {

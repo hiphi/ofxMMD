@@ -881,7 +881,8 @@ void Renderer::uploadModel0(PMDModel::UserData *userData, PMDModel *model, const
         }
     }
 	
-    casted->materials = materialPrivates;
+	
+	casted->materials = materialPrivates;
     model->setUserData(casted);
     model->setLightPosition(m_scene->lightPosition());
 	model->setSoftwareSkinningEnable(m_scene->isSoftwareSkinningEnabled());//
@@ -937,73 +938,15 @@ void Renderer::updateModel(vpvl::PMDModel *model)
 
 void Renderer::renderModel(const vpvl::PMDModel *model)
 {
-	/*glPushMatrix();
-	//glPointSize(2.0f);
-	//glTranslated(500, 500, 0);
-	glScalef(10.f, 10.f, 10.f);
-	glBegin(GL_POINTS);
-	glColor3d(0.0, 1.0, 1.0);
-	for(int i=0;i<model->vertices().count();i++){
-		vpvl::Vertex* vertex = model->vertices()[i];
-		glVertex3f(vertex->position().m_floats[0],vertex->position().m_floats[1],vertex->position().m_floats[2]);
-	}
-	glEnd();
-	glPopMatrix();*/
-	
-	
-	///////////
-	/*glColor4f(1.f, 0.f, 0.f, 1.f);
-	glPushMatrix();
-	glTranslated(500,0,0);
-	glScalef(10.f, 10.f, 10.f);
-	const PMDModelUserData *userData = static_cast<PMDModelUserData *>(model->userData());
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glVertexPointer(3, GL_FLOAT, model->strideSize(vpvl::PMDModel::kVerticesStride), model->verticesPointer());
-	glBindBuffer(GL_ARRAY_BUFFER, userData->vertexBufferObjects[kModelVertices]);
-	glColor4f(0.9f,0.1f,1.0f,1.0f);
-	
-	const vpvl::MaterialList &materials = model->materials();
-    const PMDModelMaterialPrivate *materialPrivates = userData->materials;
-    const int nmaterials = materials.count();
-	size_t offset = 0;
-	Color ambient, diffuse;
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vertexBufferObjects[kShadowIndices]);
-	for (int i = 0; i < nmaterials; i++) {
-		const vpvl::Material *material = materials[i];
-		ambient = material->ambient();
-        diffuse = material->diffuse();
-		glColor4f(diffuse.m_floats[0], diffuse.m_floats[1], diffuse.m_floats[2], diffuse.m_floats[3]);
-		const int nindices = material->countIndices();
-		//glDrawArrays(GL_TRIANGLES,offset,nindices);
-		glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
-		//offset += nindices;
-		
-		offset += (nindices << 1 );
-	}
-	
-	//glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, model->indicesPointer());
-	
-	glDisableClientState(GL_VERTEX_ARRAY);
-	glPopMatrix();*/
-	///////////
-	
-	
-	glPushMatrix();
-	glTranslated(500,100,0);
-	//glScalef(30.f, -30.f, 30.f);
     const PMDModelUserData *userData = static_cast<PMDModelUserData *>(model->userData());
-	//
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glVertexPointer(3, GL_FLOAT, model->strideSize(vpvl::PMDModel::kVerticesStride), model->verticesPointer());
-	//
-    m_modelProgram->bind();
+	
+	m_modelProgram->bind();
     glBindBuffer(GL_ARRAY_BUFFER, userData->vertexBufferObjects[kModelVertices]);
-	//printf("stride:::%lu\n",model->strideSize(vpvl::PMDModel::kVerticesStride));
-    m_modelProgram->setPosition(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kVerticesStride)),
+    m_modelProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kVerticesStride)*/model->verticesPointer()),
                                 model->strideSize(vpvl::PMDModel::kVerticesStride));
-    m_modelProgram->setNormal(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kNormalsStride)),
+    m_modelProgram->setNormal(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kNormalsStride)*/model->normalsPointer()),
                               model->strideSize(vpvl::PMDModel::kNormalsStride));
-    m_modelProgram->setTexCoord(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kTextureCoordsStride)),
+    m_modelProgram->setTexCoord(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kTextureCoordsStride)*/model->textureCoordsPointer()),
                                 model->strideSize(vpvl::PMDModel::kTextureCoordsStride));
 
     if (!model->isSoftwareSkinningEnabled()) {
@@ -1012,7 +955,8 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
         m_modelProgram->setBoneMatrices(model->boneMatricesPointer(), model->bones().count());
     }
 
-    float matrix4x4[16], matrix3x3[9];
+    float matrix4x4[16], matrix3x3[9], modelViewMtx[16],projectionMtx[16];
+	
     m_scene->getModelViewMatrix(matrix4x4);
     m_modelProgram->setModelViewMatrix(matrix4x4);
     m_scene->getProjectionMatrix(matrix4x4);
@@ -1022,20 +966,21 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
 	
     m_modelProgram->setLightColor(m_scene->lightColor());
     m_modelProgram->setLightPosition(m_scene->lightPosition());
+	
     if (m_depthTextureID) {
         ExtendedModelProgram *modelProgram = static_cast<ExtendedModelProgram *>(m_modelProgram);
         modelProgram->setShadowTexture(m_depthTextureID);
     }
     if (model->isToonEnabled() && model->isSoftwareSkinningEnabled()) {
-        m_modelProgram->setToonTexCoord(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kToonTextureStride)),
+        m_modelProgram->setToonTexCoord(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kToonTextureStride)*/model->toonTextureCoordsPointer()),
                                         model->strideSize(vpvl::PMDModel::kToonTextureStride));
     }
-	glColor3d(0.0, 0.2, 0.5);
     const vpvl::MaterialList &materials = model->materials();
     const PMDModelMaterialPrivate *materialPrivates = userData->materials;
     const int nmaterials = materials.count();
     Color ambient, diffuse;
     size_t offset = 0;
+	
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vertexBufferObjects[kShadowIndices]);
     for (int i = 0; i < nmaterials; i++) {
         const vpvl::Material *material = materials[i];
@@ -1061,21 +1006,18 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
     }
     m_modelProgram->unbind();
     glEnable(GL_CULL_FACE);
-	glPopMatrix();
 }
 	
 void Renderer::renderModelShadow(const vpvl::PMDModel *model)
 {
-	//printf("model->vertices().count():%d\n",model->vertices().count());
-	//printf("model->indices().count() :%d\n",model->indices().count() );
-	
-    static const Vector3 plane(0.0f, 1.0f, 0.0f);
+	static const Vector3 plane(0.0f, 1.0f, 0.0f);
     const PMDModelUserData *userData = static_cast<PMDModelUserData *>(model->userData());
     const Vector3 &light = m_scene->lightPosition();
     const Scalar dot = plane.dot(light);
     float modelViewMatrix[16], projectionMatrix[16], shadowMatrix[16];
     m_scene->getModelViewMatrix(modelViewMatrix);
     m_scene->getProjectionMatrix(projectionMatrix);
+	
     glBindBuffer(GL_ARRAY_BUFFER, userData->vertexBufferObjects[kModelVertices]);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vertexBufferObjects[kShadowIndices]);
     for (int i = 0; i < 4; i++) {
@@ -1092,32 +1034,13 @@ void Renderer::renderModelShadow(const vpvl::PMDModel *model)
     m_shadowProgram->setShadowMatrix(shadowMatrix);
     m_shadowProgram->setLightColor(m_scene->lightColor());
     m_shadowProgram->setLightPosition(m_scene->lightPosition());
-    m_shadowProgram->setPosition(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kVerticesStride)),
+    m_shadowProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kVerticesStride)*/model->verticesPointer()),
                                  model->strideSize(vpvl::PMDModel::kVerticesStride));
-
-	//TODO
-	/*size_t offset = 0;
-	const vpvl::MaterialList &materials = model->materials();
-	const int nmaterials = materials.count();
-	for (int i = 0; i < nmaterials; i++) {
-		const vpvl::Material *material = materials[i];
-		const int nindices = material->countIndices();
-		//glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
-		glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
-        offset += nindices;
-		printf("nindices:%d\n",nindices);
-	}*/
 	
-	/*for(int i=0;i<model->indices().count();i++){
-		printf("indices[%d]:%hu\n",i,model->indices()[i]);
-	}*/
-	
-	//
-	size_t zero = 0;
-	glDrawElements(GL_TRIANGLES, /*model->indices().count()*/63084, GL_UNSIGNED_SHORT,(GLvoid *)0);
-	glDrawElements(GL_TRIANGLES, /*model->indices().count()*/6168, GL_UNSIGNED_SHORT,(GLvoid *)63084);
-	//glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, 0);
+	glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, 0);
     m_shadowProgram->unbind();
+	
+	glPopMatrix();
 }
 
 void Renderer::renderModelZPlot(const vpvl::PMDModel *model)
@@ -1144,10 +1067,10 @@ void Renderer::renderModelZPlot(const vpvl::PMDModel *model)
     m_zplotProgram->setProjectionMatrix(projectionMatrix);
     glEnable(GL_POLYGON_OFFSET_FILL);
     glPolygonOffset(4.0f, 4.0f);
-    m_zplotProgram->setPosition(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kVerticesStride)),
+    m_zplotProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kVerticesStride)*/model->verticesPointer()),
                                  model->strideSize(vpvl::PMDModel::kVerticesStride));
 	
-	size_t offset = 0;
+	/*size_t offset = 0;
 	const vpvl::MaterialList &materials = model->materials();
 	const int nmaterials = materials.count();
 	for (int i = 0; i < nmaterials; i++) {
@@ -1156,8 +1079,8 @@ void Renderer::renderModelZPlot(const vpvl::PMDModel *model)
 		glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
 		//printf("offset:%lu\n",offset);
         offset += nindices;
-	}
-	//glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, 0);
+	}*/
+	glDrawElements(GL_TRIANGLES, model->indices().count(), GL_UNSIGNED_SHORT, 0);
 	
     glDisable(GL_POLYGON_OFFSET_FILL);
     m_zplotProgram->unbind();
@@ -1179,33 +1102,22 @@ void Renderer::renderModelEdge(const vpvl::PMDModel *model)
     m_edgeProgram->setModelViewMatrix(modelViewMatrix);
     m_edgeProgram->setProjectionMatrix(projectionMatrix);
     if (!model->isSoftwareSkinningEnabled()) {
-        m_edgeProgram->setPosition(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kVerticesStride)),
+        m_edgeProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kVerticesStride)*/model->verticesPointer()),
                                    model->strideSize(vpvl::PMDModel::kVerticesStride));
-        m_edgeProgram->setNormal(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kNormalsStride)),
+        m_edgeProgram->setNormal(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kNormalsStride)*/model->normalsPointer()),
                                  model->strideSize(vpvl::PMDModel::kNormalsStride));
-        m_edgeProgram->setBoneAttributes(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kBoneAttributesStride)),
+        m_edgeProgram->setBoneAttributes(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kBoneAttributesStride)*/model->boneAttributesPointer()),
                                          model->strideSize(vpvl::PMDModel::kBoneAttributesStride));
-        m_edgeProgram->setEdge(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kEdgeVerticesStride)),
+        m_edgeProgram->setEdge(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kEdgeVerticesStride)*/model->edgeVerticesPointer()),
                                model->strideSize(vpvl::PMDModel::kEdgeVerticesStride));
         m_edgeProgram->setBoneMatrices(model->boneMatricesPointer(), model->bones().count());
     }
     else {
-        m_edgeProgram->setPosition(reinterpret_cast<const GLvoid *>(model->strideOffset(vpvl::PMDModel::kEdgeVerticesStride)),
+        m_edgeProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kEdgeVerticesStride)*/model->verticesPointer()),
                                    model->strideSize(vpvl::PMDModel::kEdgeVerticesStride));
     }
     glCullFace(GL_FRONT);
-	//
 	size_t offset = 0;
-	/*const vpvl::MaterialList &materials = model->materials();
-	const int nmaterials = materials.count();
-	for (int i = 0; i < nmaterials; i++) {
-		const vpvl::Material *material = materials[i];
-		const int nindices = material->countIndices();
-		glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
-		//printf("offset:%lu\n",offset);
-        offset += nindices;
-	}*/
-	//
     glDrawElements(GL_TRIANGLES, model->edgeIndicesCount(), GL_UNSIGNED_SHORT, 0);
     glCullFace(GL_BACK);
     m_edgeProgram->unbind();
