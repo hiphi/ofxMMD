@@ -39,6 +39,8 @@
 #include "vpvl.h"
 #include "util.h"
 
+#include "ofMain.h"
+
 #ifndef VPVL_NO_BULLET
 #include <btBulletDynamicsCommon.h>
 #else

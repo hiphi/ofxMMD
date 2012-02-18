@@ -13,6 +13,7 @@ class ExUtoS{
 public:
 	ExUtoS();
 	const char* changeStr(string str);
+	void logStr(string str);
 	
 	GLuint img_p;
 };

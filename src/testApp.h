@@ -28,6 +28,8 @@ public:
 	vpvl::gl2::Renderer *render;
 	internal::Delegate *delegate;
 	
+	vpvl::VMDMotion *motion;
+	
 	ofVbo *vbo;
 	
 	//////////

@@ -9,14 +9,13 @@ GLfloat white[] = { 1.0, 1.0, 1.0, 1.00 };
 //--------------------------------------------------------------
 void testApp::setup() {
 	
+	
 	//char readFile[] = "../../../data/hm_m.pmd";
 	char readFile[] = "../../../data/Lat式ミクVer2.3_Normal.pmd";
 	
 	FILE *fp = fopen(readFile,"rb");
-	
 	uint8_t *buf,*nbuf;
     size_t s,p=0;
-	
     buf=(uint8_t *)malloc(BYTESRD);
     if(!buf) return;
     while((s=fread(buf+p,1,BYTESRD,fp))==BYTESRD) {
@@ -28,11 +27,7 @@ void testApp::setup() {
     }
 	
     size_t f_size = p+s;
-	
-	
-	
 	model = new vpvl::PMDModel();
-	
 	bool flg = model->load(buf,f_size);
 	
 	if(flg == true){
@@ -40,6 +35,39 @@ void testApp::setup() {
 	}else{
 		printf("load file false...\n");
 	}
+	
+	
+	//////////
+	
+	
+	char motionFile[] = "../../../data/キラメキラリ（ミクver2用）.vmd";
+	FILE *mp = fopen(motionFile, "rb");
+	
+	uint8_t *buf_m,*nbuf_m;
+    size_t s_m,p_m=0;
+    buf_m=(uint8_t *)malloc(BYTESRD);
+    if(!buf_m) return;
+    while((s_m=fread(buf_m+p_m,1,BYTESRD,mp))==BYTESRD) {
+        s_m=0;
+        p_m+=BYTESRD;
+        nbuf_m=(uint8_t *)realloc(buf_m,p_m+BYTESRD);
+        if(!nbuf_m) break;
+        buf_m=nbuf_m;
+    }
+	
+    size_t m_size = p_m+s_m;
+	motion = new vpvl::VMDMotion();
+	bool flg_m = motion->load(buf_m,m_size);
+	
+	if(flg_m == true){
+		motion->attachModel(model);
+		printf("load file ture!!\n");
+	}else{
+		printf("load file false...\n");
+	}
+	
+	
+	//////////
 	
 	
 	
@@ -110,17 +138,21 @@ void testApp::keyPressed(int key) {
 	
 	static float posX=0.0f;
 	static float posZ=0.0f;
-
-	if(key == 356){
-		posX += 0.25;
-	}else if(key == 358){
+	
+	static float index=0;
+	
+	/*if(key == 356){
+		posX += 0.25;*/
+		motion->seek(index);
+		index++;
+	/*}else if(key == 358){
 		posX -= 0.25;
 	}else if(key == 359){
 		posZ += 0.25;
 	}else if(key == 357){
 		posZ -= 0.25;
 	}
-	model->setPositionOffset(btVector3(posX,0.0f,posZ));
+	model->setPositionOffset(btVector3(posX,0.0f,posZ));*/
 }
 
 //--------------------------------------------------------------

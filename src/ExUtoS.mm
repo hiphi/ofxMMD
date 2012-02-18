@@ -21,7 +21,17 @@ const char* ExUtoS::changeStr(string str){
 	NSString* sjisStr = [NSString stringWithCString:str.c_str() encoding:NSShiftJISStringEncoding];
 	//NSLog(@"NSString::%@\n",sjisStr);
 	
-	[pool release];
+	//[pool release];
 	
 	return [sjisStr UTF8String];
+}
+
+void ExUtoS::logStr(string str){
+	NSAutoreleasePool* pool;
+    pool = [[NSAutoreleasePool alloc]init];
+	
+	NSString* sjisStr = [NSString stringWithCString:str.c_str() encoding:NSShiftJISStringEncoding];
+	NSLog(@"NSString::%@\n",sjisStr);
+	
+	//[pool release];
 }
