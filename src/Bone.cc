@@ -39,7 +39,7 @@
 #include "vpvl.h"
 #include "util.h"
 
-#include "ExUtoS.h"
+//#include "ExUtoS.h"
 
 namespace vpvl
 {
@@ -135,16 +135,21 @@ void Bone::read(const uint8_t *data, int16_t id)
 {
     BoneChunk chunk;
     internal::copyBytes(reinterpret_cast<uint8_t *>(&chunk), data, sizeof(chunk));
-    setName(chunk.name);
+	setName(chunk.name);
 	
 	//////////
-	unsigned char dst[20];
+	/*unsigned char dst[20];
 	memcpy(dst, chunk.name, sizeof(chunk.name));
 	string str = (reinterpret_cast<char const *>(dst));
 	
 	ExUtoS *uts = new ExUtoS();
-	/*const char *pt = */
+	//const char *pt = 
 	printf("bone:%s\n",uts->changeStr(str));
+	//
+	uint8_t utf_name[20];
+	memcpy(utf_name, dst, sizeof(dst));
+	const uint8_t name[] = { 0x82, 0xd0, 0x82, 0xb4, 0x0 };
+	setName(name);*/
 	//////////
 	
     Type type = static_cast<Type>(chunk.type);

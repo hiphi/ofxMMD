@@ -942,6 +942,7 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
 	
 	m_modelProgram->bind();
     glBindBuffer(GL_ARRAY_BUFFER, userData->vertexBufferObjects[kModelVertices]);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vertexBufferObjects[kShadowIndices]);
     m_modelProgram->setPosition(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kVerticesStride)*/model->verticesPointer()),
                                 model->strideSize(vpvl::PMDModel::kVerticesStride));
     m_modelProgram->setNormal(reinterpret_cast<const GLvoid *>(/*model->strideOffset(vpvl::PMDModel::kNormalsStride)*/model->normalsPointer()),
@@ -981,7 +982,6 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
     Color ambient, diffuse;
     size_t offset = 0;
 	
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vertexBufferObjects[kShadowIndices]);
     for (int i = 0; i < nmaterials; i++) {
         const vpvl::Material *material = materials[i];
         const PMDModelMaterialPrivate &materialPrivate = materialPrivates[i];
@@ -1006,6 +1006,9 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
     }
     m_modelProgram->unbind();
     glEnable(GL_CULL_FACE);
+	
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 	
 void Renderer::renderModelShadow(const vpvl::PMDModel *model)
@@ -1072,6 +1075,9 @@ void Renderer::renderModelZPlot(const vpvl::PMDModel *model)
 	
     glDisable(GL_POLYGON_OFFSET_FILL);
     m_zplotProgram->unbind();
+	
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 #endif
 }
 

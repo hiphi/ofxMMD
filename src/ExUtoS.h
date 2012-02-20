@@ -14,6 +14,7 @@ public:
 	ExUtoS();
 	const char* changeStr(string str);
 	void logStr(string str);
+	const char* utf8ToSjis(string str);
 	
 	GLuint img_p;
 };

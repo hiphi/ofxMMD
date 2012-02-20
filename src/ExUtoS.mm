@@ -35,3 +35,17 @@ void ExUtoS::logStr(string str){
 	
 	//[pool release];
 }
+
+const char* ExUtoS::utf8ToSjis(string str){
+	NSAutoreleasePool* pool;
+    pool = [[NSAutoreleasePool alloc]init];
+	
+	NSString* sjisStr = [NSString stringWithCString:str.c_str() encoding:NSUTF8StringEncoding];
+	//NSLog(@"NSString::%@\n",sjisStr);
+	
+	//[pool release];
+	
+	return [sjisStr UTF8String];
+}
+
+

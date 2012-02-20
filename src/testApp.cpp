@@ -1,6 +1,8 @@
 #include "testApp.h"
 #include "Delegate.h"
 #include "Common.h"
+#include "Bone.h"
+#include "ExUtoS.h"
 
 #define BYTESRD 1024
 
@@ -12,6 +14,7 @@ void testApp::setup() {
 	
 	//char readFile[] = "../../../data/hm_m.pmd";
 	char readFile[] = "../../../data/Lat式ミクVer2.3_Normal.pmd";
+	//char readFile[] = "../../../data/萩原雪歩 Da衣装.pmd";
 	
 	FILE *fp = fopen(readFile,"rb");
 	uint8_t *buf,*nbuf;
@@ -40,7 +43,11 @@ void testApp::setup() {
 	//////////
 	
 	
-	char motionFile[] = "../../../data/キラメキラリ（ミクver2用）.vmd";
+	//char motionFile[] = "../../../data/キラメキラリ（ミクver2用）.vmd";
+	//char motionFile[] = "../../../data/ココロ.vmd";
+	//char motionFile[] = "../../../data/Torino_motion/Torinoko_Miku_20101228.vmd";
+	//char motionFile[] = "../../../data/popipo.vmd";
+	char motionFile[] = "../../../data/ストロボナイツモーション/ストロボナイツ.vmd";
 	FILE *mp = fopen(motionFile, "rb");
 	
 	uint8_t *buf_m,*nbuf_m;
@@ -66,6 +73,7 @@ void testApp::setup() {
 		printf("load file false...\n");
 	}
 	
+	mFlg = false;
 	
 	//////////
 	
@@ -91,7 +99,7 @@ void testApp::setup() {
 	render->scene()->setWorld(mWorld);
 	render->initializeSurface();
 	render->uploadModel(model, "../../../data");
-	//render->setSelectedModel(model);
+	render->setSelectedModel(model);
 	render->renderModel(model);
 	render->renderModelZPlot(model);
 	
@@ -116,21 +124,34 @@ void testApp::update() {
 	render->updateAllModel();
 	
 	t += dt;
+	
+	
+	static float index=0;
+	
+	if(mFlg == true){
+		index+= 0.2;
+		motion->seek(index);
+	}
+	
+	if(index >= motion->maxFrameIndex()){
+		mFlg = false;
+		index = 0.f;
+	}
 }
 
 //--------------------------------------------------------------
 void testApp::draw() {
 	
+	render->renderModelZPlot(model);
 	render->clear();
 	
-	render->renderModelZPlot(model);
 	//render->renderModelEdge(model);
-	render->renderModel(model);
-	render->renderModelShadow(model);
+	//render->renderModel(model);
+	//render->renderModelShadow(model);
 	
-    //render->renderProjectiveShadow();
-    //render->renderAllModels();
-    //render->renderAllAssets();
+    render->renderProjectiveShadow();
+    render->renderAllModels();
+    render->renderAllAssets();
 }
 
 //--------------------------------------------------------------
@@ -139,20 +160,54 @@ void testApp::keyPressed(int key) {
 	static float posX=0.0f;
 	static float posZ=0.0f;
 	
-	static float index=0;
+	if(key == 32){
+		mFlg = !mFlg;
+	}
 	
-	/*if(key == 356){
-		posX += 0.25;*/
-		motion->seek(index);
-		index++;
-	/*}else if(key == 358){
+	
+	/////////////////////////////////////////////////////
+	static int bNum = 0;
+	int len = model->bones().count();
+	vpvl::Bone *b = model->bones()[bNum];
+	vpvl::Bone *bone = model->findBone(b->name());
+	
+	//get utf8_name
+	unsigned char dst[20];
+	memcpy(dst, b->name(), sizeof(dst));
+	string str = (reinterpret_cast<char const *>(dst));
+	ExUtoS *uts = new ExUtoS();
+	printf("bone[%d]:%s\n",bNum,uts->changeStr(str));
+	//
+	
+	if(bone){
+		if(bone->isRotateable()){
+			btQuaternion qt;
+			qt.setRotation(btVector3(0,0,1),0.25);
+			bone->setRotation(qt);
+		}else{
+			printf("don't rotate bone!\n");
+		}
+	}else{
+		printf("don't find bone!\n");
+	}
+	bNum++;
+	if(bNum >= len)
+		bNum = 0;
+	/////////////////////////////////////////////////////
+	
+	
+	//printf("key:%d max frame:%f %d\n",key, motion->maxFrameIndex(),mFlg);
+	
+	if(key == 356){
+		posX += 0.25;
+	}else if(key == 358){
 		posX -= 0.25;
 	}else if(key == 359){
 		posZ += 0.25;
 	}else if(key == 357){
 		posZ -= 0.25;
 	}
-	model->setPositionOffset(btVector3(posX,0.0f,posZ));*/
+	model->setPositionOffset(btVector3(posX,0.0f,posZ));
 }
 
 //--------------------------------------------------------------

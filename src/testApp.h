@@ -29,6 +29,7 @@ public:
 	internal::Delegate *delegate;
 	
 	vpvl::VMDMotion *motion;
+	bool mFlg;
 	
 	ofVbo *vbo;
 	
