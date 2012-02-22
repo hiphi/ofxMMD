@@ -12,7 +12,7 @@ GLfloat white[] = { 1.0, 1.0, 1.0, 1.00 };
 void testApp::setup() {
 	
 	
-	//char readFile[] = "../../../data/hm_m.pmd";
+	//char readFile[] = "../../../data/hm_s.pmd";
 	char readFile[] = "../../../data/Lat式ミクVer2.3_Normal.pmd";
 	//char readFile[] = "../../../data/萩原雪歩 Da衣装.pmd";
 	
@@ -142,8 +142,8 @@ void testApp::update() {
 //--------------------------------------------------------------
 void testApp::draw() {
 	
-	render->renderModelZPlot(model);
 	render->clear();
+	render->renderModelZPlot(model);
 	
 	//render->renderModelEdge(model);
 	//render->renderModel(model);
@@ -151,7 +151,7 @@ void testApp::draw() {
 	
     render->renderProjectiveShadow();
     render->renderAllModels();
-    render->renderAllAssets();
+    //render->renderAllAssets();
 }
 
 //--------------------------------------------------------------
