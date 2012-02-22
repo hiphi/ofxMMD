@@ -101,7 +101,7 @@ void testApp::setup() {
 	render->uploadModel(model, "../../../data");
 	render->setSelectedModel(model);
 	render->renderModel(model);
-	render->renderModelZPlot(model);
+	//render->renderModelZPlot(model);
 	
 	ofBackground(255,255,255);
 	

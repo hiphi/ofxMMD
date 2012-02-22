@@ -1001,6 +1001,7 @@ void Renderer::renderModel(const vpvl::PMDModel *model)
         m_modelProgram->setIsSubAdditive(material->isSubSphereAdd());
         opacity < 1.0f ? glDisable(GL_CULL_FACE) : glEnable(GL_CULL_FACE);
         const int nindices = material->countIndices();
+		printf("num:%d\n",i);
         glDrawElements(GL_TRIANGLES, nindices, GL_UNSIGNED_SHORT, reinterpret_cast<const GLvoid *>(offset));
 		offset += (nindices << 1 );
     }

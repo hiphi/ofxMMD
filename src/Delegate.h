@@ -37,20 +37,20 @@
 #ifndef DELEGATE_H
 #define DELEGATE_H
 
+#include "ofMain.h"
+
 #include <stdio.h>
 
 #include "Renderer.h"
 #include "util.h"
 #include "Common.h"
 
-//#include "ExUtoS.h"
-#include "ImageLoader.h"
-
 namespace internal {
 
 	class Delegate : public vpvl::gl2::Renderer::IDelegate
 {
 public:
+	vector<ofImage*>imgAry;
     Delegate(/*QGLWidget *widget*/)
         //: m_widget(widget)
     {
@@ -80,8 +80,33 @@ public:
         //QGLContext::BindOptions options = QGLContext::LinearFilteringBindOption|QGLContext::InvertedYBindOption;
         //textureID = m_widget->bindTexture(QGLWidget::convertToGLFormat(image), GL_TEXTURE_2D,
         //                                  image.depth() == 32 ? GL_RGBA : GL_RGB, options);
+		ofImage *img = new ofImage();
+		img->loadImage(path);
+		imgAry.push_back(img);
+		glGenTextures(1, &textureID);
+		glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+		glBindTexture(GL_TEXTURE_2D, textureID);
+		glTexImage2D(GL_TEXTURE_2D, 
+					 0, 
+					 img->getTextureReference().getTextureData().glTypeInternal, 
+					 img->getWidth(), img->getHeight(), 
+					 0, 
+					 img->getTextureReference().getTextureData().glType, 
+					 GL_UNSIGNED_BYTE, 
+					 img->getPixels()
+		);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 		
-		ImageLoader* iLoader = new ImageLoader();
+        if (!isToon) {
+            glTexParameteri(textureID, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+            glTexParameteri(textureID, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+        }
+		glBindTexture(GL_TEXTURE_2D, 0);
+		
+		/*ImageLoader* iLoader = new ImageLoader();
 		textureID = iLoader->loadImage(path);
 		
 		glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
@@ -93,7 +118,7 @@ public:
         }
         //qDebug("Loaded a texture (ID=%d): \"%s\"", textureID, qPrintable(pathString));
 		printf("Loaded a texture (ID=%d): \"%s\"\n", textureID, path.c_str());
-		glBindTexture(GL_TEXTURE_2D, 0);
+		glBindTexture(GL_TEXTURE_2D, 0);*/
         return textureID != 0;
     }
     bool uploadToonTexture(const std::string &name, const std::string &dir, GLuint &textureID) {
