@@ -2,7 +2,6 @@
 #include "Delegate.h"
 #include "Common.h"
 #include "Bone.h"
-#include "ExUtoS.h"
 
 #define BYTESRD 1024
 
@@ -11,10 +10,8 @@ GLfloat white[] = { 1.0, 1.0, 1.0, 1.00 };
 //--------------------------------------------------------------
 void testApp::setup() {
 	
-	
-	//char readFile[] = "../../../data/hm_s.pmd";
+	//add pmd/resources file data folder and change this path.
 	char readFile[] = "../../../data/Lat式ミクVer2.3_Normal.pmd";
-	//char readFile[] = "../../../data/萩原雪歩 Da衣装.pmd";
 	
 	FILE *fp = fopen(readFile,"rb");
 	uint8_t *buf,*nbuf;
@@ -42,11 +39,7 @@ void testApp::setup() {
 	
 	//////////
 	
-	
-	//char motionFile[] = "../../../data/キラメキラリ（ミクver2用）.vmd";
-	//char motionFile[] = "../../../data/ココロ.vmd";
-	//char motionFile[] = "../../../data/Torino_motion/Torinoko_Miku_20101228.vmd";
-	//char motionFile[] = "../../../data/popipo.vmd";
+	//add vmd file data folder and change this path.
 	char motionFile[] = "../../../data/ストロボナイツモーション/ストロボナイツ.vmd";
 	FILE *mp = fopen(motionFile, "rb");
 	
@@ -163,40 +156,6 @@ void testApp::keyPressed(int key) {
 	if(key == 32){
 		mFlg = !mFlg;
 	}
-	
-	
-	/////////////////////////////////////////////////////
-	static int bNum = 0;
-	int len = model->bones().count();
-	vpvl::Bone *b = model->bones()[bNum];
-	vpvl::Bone *bone = model->findBone(b->name());
-	
-	//get utf8_name
-	unsigned char dst[20];
-	memcpy(dst, b->name(), sizeof(dst));
-	string str = (reinterpret_cast<char const *>(dst));
-	ExUtoS *uts = new ExUtoS();
-	printf("bone[%d]:%s\n",bNum,uts->changeStr(str));
-	//
-	
-	if(bone){
-		if(bone->isRotateable()){
-			btQuaternion qt;
-			qt.setRotation(btVector3(0,0,1),0.25);
-			bone->setRotation(qt);
-		}else{
-			printf("don't rotate bone!\n");
-		}
-	}else{
-		printf("don't find bone!\n");
-	}
-	bNum++;
-	if(bNum >= len)
-		bNum = 0;
-	/////////////////////////////////////////////////////
-	
-	
-	//printf("key:%d max frame:%f %d\n",key, motion->maxFrameIndex(),mFlg);
 	
 	if(key == 356){
 		posX += 0.25;

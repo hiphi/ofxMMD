@@ -2,19 +2,21 @@ ofxMMD
 =====
 
 **english below**
-
-
-
+<br/>
+<br/>
+<br/>
+[japanese]
+-----
 
 ofxMMDはhkrnさんのMMDAIに含まれるlibvpvlをopenframeworksに対応させたものです。
 libvpvl:https://github.com/hkrn/MMDAI
 
 # サンプル映像
-→vimeo
+→http://vimeo.com/37435983
 
 
 MMDのアニメーションの再生に対応させる目的で作ったため
-Boneの追加、アニメーションの編集等には対応していません。
+Boneの追加等編集、作成には対応していません。
 主にPMDファイルの表示、VMDファイルの再生に対応しています。
 
 
@@ -47,10 +49,10 @@ PmdModelを関連づけると踊ってくれます。
 
 openframeworksのバージョンは007でテストしています。
 当方の確認環境は MacOSX 10.6.8のみです。
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
 [english]
 -----
 

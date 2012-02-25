@@ -1,0 +1,1798 @@
+TofxBullet Empty Example
+v3
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+
+N/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004D55C82600000000000010DD
+t1297467430
+s4317
+
+N/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h
+c000000004D55CD3B000000000000190C
+t1297468731
+s6412
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004BD2589F0000000000043820
+t1272076447
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004DF9F71B0000000002B5C7A0
+t1308227355
+s45467552
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004DD5EC60000000000051BA20
+t1305865312
+s5356064
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004C0FDD7E000000000000A5F0
+t1276108158
+s42480
+
+N/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004B4834EA00000000000005FF
+t1263023338
+s1535
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004DEEB6D200000000002181A0
+t1307490002
+s2195872
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004E2085850000000000782350
+t1310754181
+s7873360
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004C23F49F0000000000021710
+t1277424799
+s136976
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004DF9F7CC000000000017B260
+t1308227532
+s1552992
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004B8E4E9E0000000000025B59
+t1267617438
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004B8E4E9E0000000000003F84
+t1267617438
+s16260
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004DF9F72F0000000000043360
+t1308227375
+s275296
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004E5295740000000000785970
+t1314035060
+s7887216
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/events/ofxBulletRaycastData.h
+c000000004F0BD58800000000000002EB
+t1326175624
+s747
+i"ofMain.h"
+i"ofxBulletBaseShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/joints/ofxBulletJoint.h
+c000000004F218A6D00000000000007D9
+t1327598189
+s2009
+i"ofMain.h"
+i"btBulletDynamicsCommon.h"
+i"ofxBulletConstants.h"
+i"ofxBulletUtils.h"
+i"ofxBulletBaseShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/ofxBulletConstants.h
+c000000004F0BD5880000000000000213
+t1326175624
+s531
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/ofxBulletUserData.h
+c000000004F0BD588000000000000015E
+t1326175624
+s350
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/ofxBulletUtils.h
+c000000004F0BD5880000000000000C92
+t1326175624
+s3218
+i"btBulletDynamicsCommon.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/ofxBulletWorldRigid.h
+c000000004F0BD5880000000000000A54
+t1326175624
+s2644
+i"ofMain.h"
+i"btBulletDynamicsCommon.h"
+i"ofxBulletUtils.h"
+i"ofxBulletConstants.h"
+i"ofxBulletBaseShape.h"
+i"ofxBulletCollisionData.h"
+i"ofxBulletMousePickEvent.h"
+i"GLDebugDrawer.h"
+i"ofxBulletRaycastData.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/render/GLDebugDrawer.h
+c000000004F0BD5880000000000000486
+t1326175624
+s1158
+i"LinearMath/btIDebugDraw.h"
+i"ofMain.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletBaseShape.h
+c000000004F0BD5880000000000000E9E
+t1326175624
+s3742
+i"ofMain.h"
+i"btBulletDynamicsCommon.h"
+i"ofxBulletConstants.h"
+i"ofxBulletUtils.h"
+i"ofxBulletUserData.h"
+i"ofxBulletCollisionData.h"
+i"ofxBulletMousePickEvent.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletBox.h
+c000000004F0BD588000000000000042D
+t1326175624
+s1069
+i"ofxBulletBaseShape.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletCapsule.h
+c000000004F0BD58800000000000003D7
+t1326175624
+s983
+i"ofxBulletBaseShape.h"
+i"btShapeHull.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletCone.h
+c000000004F0BD58800000000000003B1
+t1326175624
+s945
+i"ofxBulletBaseShape.h"
+i"ofMain.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletCustomShape.h
+c000000004F0BD588000000000000043C
+t1326175624
+s1084
+i"ofxBulletBaseShape.h"
+i"btShapeHull.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletCylinder.h
+c000000004F0BD5880000000000000457
+t1326175624
+s1111
+i"ofxBulletBaseShape.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxBullet/src/shapes/ofxBulletSphere.h
+c000000004F0BD58800000000000004F1
+t1326175624
+s1265
+i"ofxBulletBaseShape.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/example/src/testApp.h
+c000000004F3FDAD6000000000000036D
+t1329584854
+s877
+i"ofMain.h"
+i"ofxBullet.h"
+i"vpvl.h"
+i"Renderer.h"
+i"Delegate.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/BaseAnimation.h
+c000000004F239FDD0000000000001AB5
+t1327734749
+s6837
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/BaseKeyFrame.h
+c000000004F23A007000000000000115F
+t1327734791
+s4447
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/Bone.h
+c000000004F3F132F0000000000002B87
+t1329533743
+s11143
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/BoneAnimation.h
+c000000004F239FC50000000000001562
+t1327734725
+s5474
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/CameraAnimation.h
+c000000004F239FEE0000000000001327
+t1327734766
+s4903
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/Common.h
+c000000004F239FB20000000000001EFA
+t1327734706
+s7930
+i"config.h"
+i<stdint.h>
+i<assert.h>
+i<math.h>
+i<stdio.h>
+i<string.h>
+i<stdarg.h>
+i<stdlib.h>
+i<LinearMath/btAlignedObjectArray.h>
+i<LinearMath/btHashMap.h>
+i<LinearMath/btQuaternion.h>
+i<LinearMath/btTransform.h>
+i<LinearMath/btVector3.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/Constraint.h
+c000000004F239FCA0000000000000FDC
+t1327734730
+s4060
+i"RigidBody.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/Face.h
+c000000004F239FFE0000000000001745
+t1327734782
+s5957
+i"Common.h"
+i"Vertex.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/FaceAnimation.h
+c000000004F23A01100000000000013A8
+t1327734801
+s5032
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/IK.h
+c000000004F23A0190000000000000EEA
+t1327734809
+s3818
+i"Bone.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/LightAnimation.h
+c000000004F23A02C0000000000001025
+t1327734828
+s4133
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/Material.h
+c000000004F23A074000000000000142A
+t1327734900
+s5162
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/RigidBody.h
+c000000004F239FF500000000000010E8
+t1327734773
+s4328
+i"Bone.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/addons/ofxMMD/src/vpvl/Vertex.h
+c000000004F26876F0000000000001073
+t1327925103
+s4211
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/events/ofxBulletCollisionData.h
+c000000004F0BD5880000000000000210
+t1326175624
+s528
+i"ofMain.h"
+i"ofxBulletBaseShape.h"
+i"ofxBulletUserData.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/events/ofxBulletMousePickEvent.h
+c000000004F0BD58800000000000002F2
+t1326175624
+s754
+i"ofMain.h"
+i"ofxBulletRaycastData.h"
+i"ofxBulletBaseShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/events/ofxBulletRaycastData.h
+c000000004F0BD58800000000000002EB
+t1326175624
+s747
+i"ofMain.h"
+i"ofxBulletBaseShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/joints/ofxBulletJoint.cpp
+c000000004F21EEA90000000000001E8E
+t1327623849
+s7822
+i"ofxBulletJoint.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/joints/ofxBulletJoint.h
+c000000004F218A6D00000000000007D9
+t1327598189
+s2009
+i"ofMain.h"
+i"btBulletDynamicsCommon.h"
+i"ofxBulletConstants.h"
+i"ofxBulletUtils.h"
+i"ofxBulletBaseShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/ofxBullet.h
+c000000004F0BD5880000000000000291
+t1326175624
+s657
+i"ofxBulletWorldRigid.h"
+i"ofxBulletConstants.h"
+i"ofxBulletUtils.h"
+i"ofxBulletUserData.h"
+i"ofxBulletSphere.h"
+i"ofxBulletCylinder.h"
+i"ofxBulletBox.h"
+i"ofxBulletBaseShape.h"
+i"ofxBulletCone.h"
+i"ofxBulletCapsule.h"
+i"ofxBulletCustomShape.h"
+i"ofxBulletJoint.h"
+i"ofxBulletMousePickEvent.h"
+i"ofxBulletCollisionData.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/ofxBulletWorldRigid.cpp
+c000000004F0BD58800000000000036A9
+t1326175624
+s13993
+i"ofxBulletWorldRigid.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/render/GLDebugDrawer.cpp
+c000000004F0BD5880000000000000E88
+t1326175624
+s3720
+i"GLDebugDrawer.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/render/GLDebugDrawer.h
+c000000004F0BD5880000000000000486
+t1326175624
+s1158
+i"LinearMath/btIDebugDraw.h"
+i"ofMain.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBaseShape.cpp
+c000000004F0BD5880000000000002B7E
+t1326175624
+s11134
+i"ofxBulletBaseShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBaseShape.h
+c000000004F0BD5880000000000000E9E
+t1326175624
+s3742
+i"ofMain.h"
+i"btBulletDynamicsCommon.h"
+i"ofxBulletConstants.h"
+i"ofxBulletUtils.h"
+i"ofxBulletUserData.h"
+i"ofxBulletCollisionData.h"
+i"ofxBulletMousePickEvent.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBox.cpp
+c000000004F0BD5880000000000001703
+t1326175624
+s5891
+i"ofxBulletBox.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBox.h
+c000000004F0BD588000000000000042D
+t1326175624
+s1069
+i"ofxBulletBaseShape.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCapsule.cpp
+c000000004F0BD5880000000000000DF7
+t1326175624
+s3575
+i"ofxBulletCapsule.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCapsule.h
+c000000004F0BD58800000000000003D7
+t1326175624
+s983
+i"ofxBulletBaseShape.h"
+i"btShapeHull.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCone.cpp
+c000000004F0BD5880000000000000D44
+t1326175624
+s3396
+i"ofxBulletCone.h"
+i<GL/glu.h>
+i<GL/glut.h>
+i<OpenGL/glu.h>
+i<GLUT/glut.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCone.h
+c000000004F0BD58800000000000003B1
+t1326175624
+s945
+i"ofxBulletBaseShape.h"
+i"ofMain.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCustomShape.cpp
+c000000004F0BD5880000000000001B47
+t1326175624
+s6983
+i"ofxBulletCustomShape.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCustomShape.h
+c000000004F0BD588000000000000043C
+t1326175624
+s1084
+i"ofxBulletBaseShape.h"
+i"btShapeHull.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCylinder.cpp
+c000000004F0BD588000000000000114E
+t1326175624
+s4430
+i"ofxBulletCylinder.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCylinder.h
+c000000004F0BD5880000000000000457
+t1326175624
+s1111
+i"ofxBulletBaseShape.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletSphere.cpp
+c000000004F0BD588000000000000160B
+t1326175624
+s5643
+i"ofxBulletSphere.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletSphere.h
+c000000004F0BD58800000000000004F1
+t1326175624
+s1265
+i"ofxBulletBaseShape.h"
+i"ofVbo.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/example/src/main.cpp
+c000000004F44890F000000000000019E
+t1329891599
+s414
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/example/src/testApp.cpp
+c000000004F4512870000000000001720
+t1329926791
+s5920
+i"testApp.h"
+i"Delegate.h"
+i"Common.h"
+i"Bone.h"
+i"ExUtoS.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/config.h
+c000000004F0AA1EA0000000000000EC9
+t1326096874
+s3785
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/internal/Delegate.h
+c000000004F44D7BA0000000000002416
+t1329911738
+s9238
+i"ofMain.h"
+i<stdio.h>
+i"Renderer.h"
+i"util.h"
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl.h
+c000000004F239F9E0000000000000C71
+t1327734686
+s3185
+i"Common.h"
+i"Asset.h"
+i"BaseAnimation.h"
+i"BaseKeyFrame.h"
+i"Bone.h"
+i"BoneKeyFrame.h"
+i"BoneAnimation.h"
+i"CameraKeyFrame.h"
+i"CameraAnimation.h"
+i"Constraint.h"
+i"Face.h"
+i"FaceKeyFrame.h"
+i"FaceAnimation.h"
+i"IK.h"
+i"LightKeyFrame.h"
+i"LightAnimation.h"
+i"Material.h"
+i"PMDModel.h"
+i"RigidBody.h"
+i"Scene.h"
+i"SceneUtil.h"
+i"Vertex.h"
+i"VMDMotion.h"
+i"Project.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Asset.cc
+c000000004F239FA900000000000013DB
+t1327734697
+s5083
+i"vpvl.h"
+i<assimp.hpp>
+i<aiPostProcess.h>
+i<aiScene.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Asset.h
+c000000004F239FBB00000000000010FA
+t1327734715
+s4346
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BaseAnimation.cc
+c000000004F239F0F00000000000013A4
+t1327734543
+s5028
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BaseAnimation.h
+c000000004F239FDD0000000000001AB5
+t1327734749
+s6837
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BaseKeyFrame.h
+c000000004F23A007000000000000115F
+t1327734791
+s4447
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Bone.cc
+c000000004F411D610000000000002C39
+t1329667425
+s11321
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Bone.h
+c000000004F3F132F0000000000002B87
+t1329533743
+s11143
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneAnimation.cc
+c000000004F23A13D00000000000028A3
+t1327735101
+s10403
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneAnimation.h
+c000000004F239FC50000000000001562
+t1327734725
+s5474
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneKeyFrame.cc
+c000000004F239F510000000000002926
+t1327734609
+s10534
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneKeyFrame.h
+c000000004F239FC00000000000001797
+t1327734720
+s6039
+i"BaseKeyFrame.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraAnimation.cc
+c000000004F239F60000000000000217D
+t1327734624
+s8573
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraAnimation.h
+c000000004F239FEE0000000000001327
+t1327734766
+s4903
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraKeyFrame.cc
+c000000004F23A14C0000000000002CEA
+t1327735116
+s11498
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraKeyFrame.h
+c000000004F239FE70000000000001B4E
+t1327734759
+s6990
+i"BaseKeyFrame.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Common.cc
+c000000004F23A0490000000000000AC6
+t1327734857
+s2758
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Common.h
+c000000004F239FB20000000000001EFA
+t1327734706
+s7930
+i"config.h"
+i<stdint.h>
+i<assert.h>
+i<math.h>
+i<stdio.h>
+i<string.h>
+i<stdarg.h>
+i<stdlib.h>
+i<LinearMath/btAlignedObjectArray.h>
+i<LinearMath/btHashMap.h>
+i<LinearMath/btQuaternion.h>
+i<LinearMath/btTransform.h>
+i<LinearMath/btVector3.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Constraint.cc
+c000000004F23A15900000000000026E0
+t1327735129
+s9952
+i"vpvl.h"
+i"util.h"
+i<BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Constraint.h
+c000000004F239FCA0000000000000FDC
+t1327734730
+s4060
+i"RigidBody.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Face.cc
+c000000004F26D1EE0000000000001DF3
+t1327944174
+s7667
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Face.h
+c000000004F239FFE0000000000001745
+t1327734782
+s5957
+i"Common.h"
+i"Vertex.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceAnimation.cc
+c000000004F23A10F0000000000001E1E
+t1327735055
+s7710
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceAnimation.h
+c000000004F23A01100000000000013A8
+t1327734801
+s5032
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceKeyFrame.cc
+c000000004F23A1660000000000001125
+t1327735142
+s4389
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceKeyFrame.h
+c000000004F23A00D0000000000000EDF
+t1327734797
+s3807
+i"BaseKeyFrame.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/IK.cc
+c000000004F239FD50000000000002515
+t1327734741
+s9493
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/IK.h
+c000000004F23A0190000000000000EEA
+t1327734809
+s3818
+i"Bone.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightAnimation.cc
+c000000004F23A171000000000000153A
+t1327735153
+s5434
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightAnimation.h
+c000000004F23A02C0000000000001025
+t1327734828
+s4133
+i"BaseAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightKeyFrame.cc
+c000000004F23A17C00000000000013FD
+t1327735164
+s5117
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightKeyFrame.h
+c000000004F23A0280000000000001020
+t1327734824
+s4128
+i"BaseKeyFrame.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Material.cc
+c000000004F23A1890000000000001EDF
+t1327735177
+s7903
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Material.h
+c000000004F23A074000000000000142A
+t1327734900
+s5162
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/PMDModel.cc
+c000000004F3F143B000000000000BD64
+t1329534011
+s48484
+i"vpvl.h"
+i"util.h"
+i"ofMain.h"
+i<btBulletDynamicsCommon.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/PMDModel.h
+c000000004F3F0EF200000000000058CB
+t1329532658
+s22731
+i"Bone.h"
+i"Constraint.h"
+i"Face.h"
+i"IK.h"
+i"Material.h"
+i"RigidBody.h"
+i"Vertex.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Project.h
+c000000004F23A1CC0000000000001633
+t1327735244
+s5683
+i<libxml/SAX2.h>
+i<string>
+i<vector>
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/RigidBody.cc
+c000000004F23A1A70000000000003275
+t1327735207
+s12917
+i"vpvl.h"
+i"util.h"
+i<btBulletDynamicsCommon.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/RigidBody.h
+c000000004F239FF500000000000010E8
+t1327734773
+s4328
+i"Bone.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Scene.cc
+c000000004F3E8FCF0000000000002F51
+t1329500111
+s12113
+i"vpvl.h"
+i"util.h"
+i<btBulletDynamicsCommon.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Scene.h
+c000000004F23A08600000000000016E6
+t1327734918
+s5862
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/SceneUtil.h
+c000000004F23A09100000000000013BB
+t1327734929
+s5051
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/VMDMotion.cc
+c000000004F23A11B00000000000029E8
+t1327735067
+s10728
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/VMDMotion.h
+c000000004F23A05800000000000018CA
+t1327734872
+s6346
+i"BoneAnimation.h"
+i"CameraAnimation.h"
+i"FaceAnimation.h"
+i"LightAnimation.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Vertex.cc
+c000000004F26D8150000000000001665
+t1327945749
+s5733
+i"vpvl.h"
+i"util.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Vertex.h
+c000000004F26876F0000000000001073
+t1327925103
+s4211
+i"Common.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/gl2/Renderer.cc
+c000000004F4503E5000000000000F4B2
+t1329923045
+s62642
+i<gl2.h>
+i<btBulletDynamicsCommon.h>
+i<aiScene.h>
+i<map>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/gl2/Renderer.h
+c000000004F242EC40000000000001A38
+t1327771332
+s6712
+i<string>
+i"Common.h"
+i<aiMaterial.h>
+i<aiScene.h>
+i<QtOpenGL/QtOpenGL>
+i<OpenGLES/ES2/gl.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/gl2/gl2.h
+c000000004F242F350000000000000FE9
+t1327771445
+s4073
+i<vpvl.h>
+i<Renderer.h>
+i<map>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/internal/util.h
+c000000004F239F3D0000000000001A8B
+t1327734589
+s6795
+i"config.h"
+i"Common.h"
+i<string.h>
+i<windows.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../libs/glut/lib/osx/GLUT.framework
+c000000004E295A9300000000000000CC
+t1311333011
+s204
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../libs/glut/lib/osx/GLUT.framework/GLUT
+c000000004D31A1600000000000092A98
+t1295098208
+s600728
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app
+t1329927419
+s102
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/Frameworks/GLUT.framework
+t1329496782
+s204
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/Info.plist
+t1329496744
+s1017
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/MacOS/ofxBullet Empty ExampleDebug
+t1329927419
+s6393220
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/PkgInfo
+t1329496744
+s8
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Asset-2286AF41FA339083.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Asset.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BaseAnimation.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Bone.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BoneAnimation.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BoneKeyFrame.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/CameraAnimation.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/CameraKeyFrame.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Common.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Constraint.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ExUtoS.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Face.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/FaceAnimation.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/FaceKeyFrame.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/GLDebugDrawer.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/IK.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ImageLoader.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/LightAnimation.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/LightKeyFrame.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Material.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/PMDModel.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Renderer.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/RigidBody.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Scene.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/VMDMotion.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Vertex.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/main-21EF5D74B13A8072.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/main-82227D70F1DD098B.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxAssimpModelLoader.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBullet Empty ExampleDebug.LinkFileList
+c000000004F492FA70000000000001AF5
+t1330196391
+s6901
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletBaseShape.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletBox.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCapsule.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCone.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCustomShape.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCylinder.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletJoint.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletSphere.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletWorldRigid.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/testApp-9A70BC9EE2B29073.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/testApp.o
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004F492FA70000000000000114
+t1330196391
+s276
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/libs/assimp/include/aiMaterial.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/libs/assimp/include/aiPostProcess.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/libs/assimp/include/aiScene.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/libs/assimp/include/assimp.hpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/src/ofxAssimpModelLoader.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ExUtoS.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ExUtoS.mm
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ImageLoader.mm
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/internal/Delegate.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/main.cpp
+c000000004F44890F000000000000019E
+t1329891599
+s414
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/testApp.cpp
+c000000004F4512870000000000001720
+t1329926791
+s5920
+i"testApp.h"
+i"Delegate.h"
+i"Common.h"
+i"Bone.h"
+i"ExUtoS.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/testApp.h
+c000000004F492FA4000000000000036D
+t1330196388
+s877
+i"ofMain.h"
+i"ofxBullet.h"
+i"vpvl.h"
+i"Renderer.h"
+i"Delegate.h"
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Asset.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BaseAnimation.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Bone.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Bone.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BoneAnimation.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BoneKeyFrame.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/CameraAnimation.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/CameraKeyFrame.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Common.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Common.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Constraint.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Face.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/FaceAnimation.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/FaceKeyFrame.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/IK.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/LightAnimation.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/LightKeyFrame.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Material.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/PMDModel.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/RigidBody.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Scene.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/VMDMotion.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Vertex.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/gl2/Renderer.cc
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/gl2/Renderer.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/libs/glut/lib/osx/GLUT.framework/Headers/glut.h
+c000000004D31A1600000000000005836
+t1295098208
+s22582
+i<windows.h>
+i<AvailabilityMacros.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c000000004F4491B20000000001742758
+t1329893810
+s24389464
+
+N/usr/include/AvailabilityMacros.h
+c000000004A8D4DF70000000000006724
+t1250774519
+s26404
+
+N/usr/include/assert.h
+c000000004BBD2CE90000000000000DCB
+t1270689001
+s3531
+
+N/usr/include/math.h
+c000000004AC599B500000000000004F1
+t1254463925
+s1265
+
+N/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/var/folders/ID/IDVl2TG2FiGmoB2UR1DDiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-dggxmlmtdahdzkhlferzrtqdisyn/Carbon.h.gch
+t2
+s0
+
+N/var/folders/ID/IDVl2TG2FiGmoB2UR1DDiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gfkmhguyfqjarhbqpofxyevuytou/Carbon.h.gch
+t2
+s0
+
+NopenFrameworks-Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/joints/ofxBulletJoint.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/ofxBulletWorldRigid.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/render/GLDebugDrawer.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBaseShape.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBox.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCapsule.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCone.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCustomShape.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCylinder.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletSphere.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/example/src/main.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/example/src/testApp.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Asset.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BaseAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Bone.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Common.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Constraint.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Face.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/IK.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Material.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/PMDModel.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/RigidBody.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Scene.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/VMDMotion.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Vertex.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/gl2/Renderer.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/src/ofxAssimpModelLoader.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ExUtoS.mm
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ImageLoader.mm
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/main.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/testApp.cpp
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Asset.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BaseAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Bone.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BoneAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BoneKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/CameraAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/CameraKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Common.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Constraint.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Face.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/FaceAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/FaceKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/IK.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/LightAnimation.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/LightKeyFrame.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Material.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/PMDModel.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/RigidBody.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Scene.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/VMDMotion.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Vertex.cc
+r0
+
+CBuild AST from /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/gl2/Renderer.cc
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesbd52222767f9b441^d446252767f9b441^-217"[WARN]The file “Project.xcconfig” couldn’t be opened because there is no such file. (/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/Project.xcconfig)1(21%IDEActivityLogMessage2@210"The file “Project.xcconfig” couldn’t be opened because there is no such file. (/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/Project.xcconfig)-351889191#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Asset-2286AF41FA339083.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Asset.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Asset.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Asset.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Asset.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Asset.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BaseAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BaseAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BaseAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BaseAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Bone.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Bone.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Bone.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Bone.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BoneAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BoneAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BoneAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BoneKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/BoneKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/BoneKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/BoneKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/CameraAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/CameraAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/CameraAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/CameraKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/CameraKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/CameraKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/CameraKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Common.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Common.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Common.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Common.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Constraint.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Constraint.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Constraint.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Constraint.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ExUtoS.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ExUtoS.mm normal i386 objective-c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Face.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Face.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Face.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Face.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/FaceAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/FaceAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/FaceAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/FaceKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/FaceKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/FaceKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/FaceKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/GLDebugDrawer.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/render/GLDebugDrawer.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/IK.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/IK.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/IK.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/IK.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ImageLoader.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/ImageLoader.mm normal i386 objective-c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/LightAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/LightAnimation.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/LightAnimation.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/LightKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/LightKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/LightKeyFrame.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/LightKeyFrame.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Material.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Material.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Material.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Material.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/PMDModel.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/PMDModel.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/PMDModel.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/PMDModel.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Renderer.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/gl2/Renderer.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Renderer.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/gl2/Renderer.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/RigidBody.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/RigidBody.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/RigidBody.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/RigidBody.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Scene.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Scene.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Scene.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Scene.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/VMDMotion.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/VMDMotion.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/VMDMotion.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/VMDMotion.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Vertex.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/src/vpvl/Vertex.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/Vertex.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/vpvl/Vertex.cc normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/main-21EF5D74B13A8072.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/example/src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/main-82227D70F1DD098B.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/main.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxAssimpModelLoader.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/ofxAssimpModelLoader/src/ofxAssimpModelLoader.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletBaseShape.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBaseShape.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletBox.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletBox.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCapsule.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCapsule.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCone.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCone.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCustomShape.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCustomShape.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletCylinder.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletCylinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletJoint.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/joints/ofxBulletJoint.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletSphere.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/shapes/ofxBulletSphere.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/ofxBulletWorldRigid.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxBullet/src/ofxBulletWorldRigid.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/testApp-9A70BC9EE2B29073.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/../../../addons/ofxMMD/example/src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC "build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Objects-normal/i386/testApp.o" /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CLd "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/MacOS/ofxBullet Empty ExampleDebug" normal i386
+r0
+
+CPBXCp ../../../libs/glut/lib/osx/GLUT.framework "bin/ofxBullet Empty ExampleDebug.app/Contents/Frameworks/GLUT.framework"
+r0
+
+CPhaseScriptExecution "Run Script" "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/build/ofxMMD.build/Debug/ofxBullet Empty Example.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
+r0
+
+CProcessInfoPlistFile "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+s351889191.165240
+e351889191.174932
+r0
+xProcessInfoPlistFile
+x/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/Info.plist
+xopenFrameworks-Info.plist
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process openFrameworks-Info.plistb16c2a2767f9b441^96d12c2767f9b441^-262"error: could not read data from '/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/openFrameworks-Info.plist': The file “openFrameworks-Info.plist” couldn’t be opened because there is no such file.1(21%IDEActivityLogMessage2@254"could not read data from '/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/openFrameworks-Info.plist': The file “openFrameworks-Info.plist” couldn’t be opened because there is no such file.-351889191#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@149"file://localhost/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/openFrameworks-Info.plist0000204d2205f041^660"ProcessInfoPlistFile "bin/ofxBullet Empty ExampleDebug.app/Contents/Info.plist" openFrameworks-Info.plist    cd /Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app/Contents/Info.plist"
+
+CProcessPCH++ /Users/fujitamunechika/Library/Developer/Xcode/DerivedData/ofxMMD-cpzqpqvxecisjiaztriezivhhcer/Index/PrecompiledHeaders/Carbon-amssrxzatonglaeijiadlpmikrzr_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/fujitamunechika/Library/Developer/Xcode/DerivedData/ofxMMD-cpzqpqvxecisjiaztriezivhhcer/Index/PrecompiledHeaders/Carbon-feoifelnlkcentdqiazswcqsgsfb_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/ID/IDVl2TG2FiGmoB2UR1DDiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-dggxmlmtdahdzkhlferzrtqdisyn/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CProcessPCH++ /var/folders/ID/IDVl2TG2FiGmoB2UR1DDiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gfkmhguyfqjarhbqpofxyevuytou/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 objective-c++ com.apple.compilers.llvmgcc42
+r0
+
+CTouch "/Users/fujitamunechika/Desktop/work/OpenFramework/of_preRelease_v007_osx/apps/ofxBulletExamples2012/example/bin/ofxBullet Empty ExampleDebug.app"
+r0
+
